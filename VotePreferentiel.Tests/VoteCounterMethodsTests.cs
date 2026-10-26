@@ -3,10 +3,6 @@ using VotePreferentiel.Services;
 
 namespace VotePreferentiel.Tests;
 
-/// <summary>
-/// Tests complémentaires (bonus) : chaque méthode intermédiaire de VoteCounter,
-/// pour vérifier le 3.5 morceau par morceau.
-/// </summary>
 public class VoteCounterMethodsTests
 {
     private readonly IVoteCounter _counter = new VoteCounter();

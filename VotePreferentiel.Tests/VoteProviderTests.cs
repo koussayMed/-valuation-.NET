@@ -3,11 +3,6 @@ using System.Text;
 using VotePreferentiel.Services;
 
 namespace VotePreferentiel.Tests;
-
-/// <summary>
-/// Tests complémentaires (bonus) du 3.3 : VoteProvider désérialise bien le JSON,
-/// sans appeler Internet (on remplace le réseau par un faux HttpMessageHandler).
-/// </summary>
 public class VoteProviderTests
 {
     private const string Json = """

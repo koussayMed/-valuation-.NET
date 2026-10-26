@@ -2,9 +2,7 @@ using VotePreferentiel.Models;
 
 namespace VotePreferentiel.Services;
 
-/// <summary>
-/// Calcule le résultat d'un vote préférentiel (élimination successive + report des voix).
-/// </summary>
+
 public class VoteCounter : IVoteCounter
 {
     public HashSet<string> GetCandidates(VoteModel voteModel)

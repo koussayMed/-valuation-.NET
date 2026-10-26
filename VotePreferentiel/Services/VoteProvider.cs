@@ -3,10 +3,7 @@ using VotePreferentiel.Models;
 
 namespace VotePreferentiel.Services;
 
-/// <summary>
-/// Récupère les votes via HTTP. Le <see cref="HttpClient"/> est fourni
-/// par l'injection de dépendances (AddHttpClient dans le Worker).
-/// </summary>
+
 public class VoteProvider : IVoteProvider
 {
     private static readonly JsonSerializerOptions JsonOptions = new()
@@ -34,10 +31,6 @@ public class VoteProvider : IVoteProvider
         return Deserialize(json);
     }
 
-    /// <summary>
-    /// Désérialise le JSON. Accepte le format { "votes": [...] } et, par sécurité,
-    /// un tableau de bulletins [ { "choices": [...] }, ... ] ou un tableau de tableaux [ ["Alice","Bilal"], ... ].
-    /// </summary>
     public static VoteModel Deserialize(string json)
     {
         if (string.IsNullOrWhiteSpace(json))

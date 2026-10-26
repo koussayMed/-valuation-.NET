@@ -3,9 +3,6 @@ using VotePreferentiel.Services;
 
 namespace VotePreferentiel.Tests;
 
-/// <summary>
-/// Les 5 tests demandés au 3.6 pour la méthode GetWinner.
-/// </summary>
 public class GetWinnerTests
 {
     private readonly IVoteCounter _counter = new VoteCounter();

@@ -2,10 +2,6 @@ using VotePreferentiel.Services;
 
 namespace VotePreferentiel.Worker;
 
-/// <summary>
-/// Télécharge les votes, affiche ce qui a été récupéré (3.4)
-/// puis calcule et affiche le gagnant (3.5). S'arrête ensuite.
-/// </summary>
 public class VoteWorker : BackgroundService
 {
     private readonly ILogger<VoteWorker> _logger;
